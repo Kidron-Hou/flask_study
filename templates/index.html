@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}'s scriptures</title>
+</head>
+<body>
+    <h2>{{ name }}'s scriptures</h2>
+    <p>{{ scriptures|length }} Titles</p>
+    <ul>
+        {% for scripture in scriptures %}
+        <li>{{ scripture.content }} - {{scripture.year}}</li>
+        {% endfor%}
+    </ul>
+    <flooter>
+        <small>&copy;2020 <a href="http://helloflask.com/tutorial">This's my way</a></small>
+    </flooter>
+</body>
+</html>
