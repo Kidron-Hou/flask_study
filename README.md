@@ -1,1 +1,1 @@
-# flask_study
+# flask学习试验小项目
