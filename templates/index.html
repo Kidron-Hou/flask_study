@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
     <title>{{ name }}'s scriptures</title>
 </head>
 <body>
-    <h2>{{ name }}'s scriptures</h2>
+    <h2><img alt="title" src="{{url_for('static',filename='image/book.jpg')}}">
+        {{ name }}'s scriptures</h2>
     <p>{{ scriptures|length }} Titles</p>
     <ul>
         {% for scripture in scriptures %}
@@ -13,6 +15,7 @@
         {% endfor%}
     </ul>
     <flooter>
+        <img alt="show" src="{{url_for('static', filename='image/pen.jpg')}}">
         <small>&copy;2020 <a href="http://helloflask.com/tutorial">This's my way</a></small>
     </flooter>
 </body>
