@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
     <link rel="stylesheet" href="{{url_for('static',filename='style.css') }}",type="text/css">
-    <title>{{ name }}'s scriptures</title>
+    <title>{{ user.name }}'s scriptures</title>
 </head>
 <body>
     <h2><img alt="title" class="title" src="{{url_for('static',filename='image/book.jpg')}}">
-        {{ name }}'s scriptures</h2>
+        {{ user.name }}'s scriptures</h2>
     <p>{{ scriptures|length }} Titles</p>
     <ul class="scripture-list">
         {% for scripture in scriptures %}
-        <li>{{ scripture.content }} - {{scripture.year}}</li>
-        {% endfor%}
+        <li>{{ scripture.lection }} - {{scripture.year}}</li>
+        {% endfor %}
     </ul>
-    <flooter>
-        <img alt="pen" class="pen" src="{{url_for('static', filename='image/pen.jpg')}}">
-        <small>&copy;2020 <a href="http://helloflask.com/tutorial">This's my way</a></small>
-    </flooter>
+    <footer>
+        <img alt="record" class="pen" src="{{url_for('static', filename='image/pen.jpg')}}">
+        <small>&copy; 2020 <a href="http://helloflask.com/tutorial">This's my way</a></small>
+    </footer>
 </body>
 </html>

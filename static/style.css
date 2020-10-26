@@ -10,7 +10,7 @@ body {
 footer {
     color: #888;
     margin-top: 15px;
-    text-align: center;
+    text-align: right;
     padding: 10px;
 }
 
@@ -42,5 +42,5 @@ footer {
 .pen {
 display: block;
 margin: 0 auto;
-height: 100px;
+height: 50px;
 }
